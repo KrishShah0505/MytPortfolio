@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish Shah-Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80 px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(155, 155, 250);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: rgb(14 14 68);
+            color: white;
+            border: 2px solid;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        .leftSection .btn a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 30vw;
+            margin: auto;
+            margin-left: 100px;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 63px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 35px;
+            height: 31px;
+            position: relative;
+            top: -31px;
+            left: -15px;
+        }
+
+
+        .vertical-title {
+            position: relative;
+            top: 40px;
+            width: 150px;
+        }
+
+
+        .vertical-desc {
+            position: relative;
+            top: 50px;
+            width: 150px;
+            color: gray;
+            font-size: smaller;
+        }
+
+        .image-second {
+            width: 35px;
+            height: 31px;
+            position: relative;
+            top: -32px;
+            left: -15px;
+
+        }
+
+        .image-third {
+            width: 35px;
+            height: 31px;
+            position: relative;
+            top: -31px;
+            left: -15px;
+        }
+
+        .image-fourth {
+            width: 35px;
+            height: 31px;
+            position: relative;
+            top: -32px;
+            left: -15px;
+        }
+
+        footer {
+            background-color: rgb(88, 22, 135);
+        }
+
+        .footer {
+            display: flex;
+            color: white;
+            margin: 0 500px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Krish's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello! My name is <span class="purple">Krish Shah</span>
+                <div>and I am a Passionate</div>
+
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href="https://drive.google.com/file/d/1zKNairf5yrr4QIp6ib_z7sjk1eJVNPB4/view?usp=drivesdk" target="_blank">Download Resume</a></button>
+                    <button class="btn"><a href="https://www.linkedin.com/in/krish-shah-3b4475297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1> Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="phplogo.png" alt="">
+                    <div class="vertical-title">
+                        Internship at Navlakhi Education(July 2024)
+                    </div>
+                    <div class="vertical-desc">
+                        PHP-DBMS project for addition of tests in database using forms
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-second" src="astra.png" alt="">
+                    <div class="vertical-title">
+                        DJS ASTRA(2024-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Electrical department in circuit design
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-third" src="tedx.png" alt="">
+                    <div class="vertical-title">
+                        TedX DJSCE(2024-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Public Relations Department
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-fourth" src="sigai.png" alt="">
+                    <div class="vertical-title">
+                        SIGAI DJSCE(2024-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Events Department
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            Krish's Developer Portfolio
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'ML Enthusiast', ' Coder','Computer Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
