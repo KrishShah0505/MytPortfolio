@@ -10,18 +10,21 @@
 </head>
 <style>
     
-    * {
-            margin: 0;
-            padding: 0;
-        }
+ /* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: "Poppins", sans-serif;
-        }
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
 
-        nav {
+/* Navigation */
+nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -48,138 +51,110 @@
             color: rgb(155, 155, 250);
             font-size: 1.04rem;
         }
-        .python{
-            margin: 20px 0;
-            height: 160px;
-            width: 160px;
-            margin-left: 30px;
-            cursor: pointer;
-            border-radius: 1rem;
-            
-        }
-        .python:hover{
-            transform: scale(1.03);
-            transition: transform 0.3s ease-in-out;
 
-        }
-        .text{
-            display: flex;
-            gap:20vw;
-            margin-left: 80px;
-        }
-       
-        
-        .Java{
-            margin:20px 0;
-            height: 160px;
-            width: 160px;
-            cursor: pointer;
-            border-radius: 1rem;
-        }
-        .Java:hover{
-            transform: scale(1.03);
-            transition: transform 0.3s ease-in-out;
-        }
-        .clanguage{
-            margin:20px 0;
-            height: 160px;
-            width: 160px;
-            cursor: pointer;
-            border-radius: 1rem;
-        }
-        .clanguage:hover{
-            transform: scale(1.03);
-            transition: transform 0.3s ease-in-out;
-        }
-        .html{
-            margin:20px 0;
-            height: 160px;
-            width: 160px;
-            cursor: pointer;
-            border-radius: 1rem;
-        }
-        .html:hover{
-            transform: scale(1.03);
-            transition: transform 0.3s ease-in-out;
-        }
-        .first{
-            display: flex;
-           
-            gap: 15vw;
-        }
-        .second{
-            display: flex;
-           
-           gap: 15vw;
-        }
-        .second .teambuild{
-            margin:20px 0;
-            height: 160px;
-            width: 160px;
-            margin-left: 30px;
-            cursor: pointer;
-            border-radius: 1rem;
-        }
-        .teambuild:hover{
-            transform: scale(1.03);
-            transition: transform 0.3s ease-in-out;
-        }
-        .profcomm{
-            margin:20px 0;
-            height: 160px;
-            width: 160px;
-            cursor: pointer;
-            border-radius: 1rem;
+.left{
+    font-size: 1.5rem;
+}
+/* Main Content Layout */
+main {
+    padding: 20px 5vw;
+}
 
-        }
-        .profcomm:hover{
-            transform: scale(1.03);
-            transition: transform 0.3s ease-in-out;
-        }
-        .problemsolve{
-            margin:20px 0;
-            height: 160px;
-            width: 160px;
-            cursor: pointer;
-            border-radius: 1rem;
-        }
-        .problemsolve:hover{
-            transform: scale(1.03);
-            transition: transform 0.3s ease-in-out;
-        }
-        
-        .text2{
-            display: flex;
-            gap:15vw;
-            margin-left: 40px;
-        }
-        .p2{
-            margin-left: 20px;
-        }
-       .criticalthink{
-        margin:20px 0;
-            height: 160px;
-            width: 160px;
-            cursor: pointer;
-            border-radius: 1rem;
-       }
-       .criticalthink:hover{
-        transform: scale(1.03);
-            transition: transform 0.3s ease-in-out;
-       }
-       .p3{
-        margin-left: 60px;
-        margin-right: 20px;
-       }
-       .javatext{
-        margin-left: 40px;
-       }
-       .ctext{
-        margin-left: 30px;
-       }
-       .htmltext{
-        margin-left: 30px;
-       }
+/* First and Second Rows */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Image Styling */
+.skill img, .softskill img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.skill img:hover, .softskill img:hover {
+    transform: scale(1.05);
+}
+
+/* Text Styling */
+.skill p, .softskill p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .skill img, .softskill img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skill p, .softskill p {
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skill img, .softskill img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skill p, .softskill p {
+        font-size: 0.85rem;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .skill img, .softskill img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .skill p, .softskill p {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+}
+
 </style>
 <body>
     <header>
@@ -199,18 +174,46 @@
         </nav>
     </header>
     <main>
-        <div class="first"><img class="python" src="python.png" alt="">
-            <img class="Java" src="java.png" alt="">
-            <img class="clanguage" src="clanguage.png" alt="">
-            <img class="html" src="html.png" alt="">
+        <!-- First Row -->
+        <div class="row">
+            <div class="skill">
+                <img src="python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <img src="java.png" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <img src="clanguage.png" alt="C Language">
+                <p>C Language</p>
+            </div>
+            <div class="skill">
+                <img src="html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
         </div>
-        <div class="text"> <p> Python</p> <p class="javatext">Java</p><p class="ctext">C Language</p><p class="htmltext">HTML</p></div><br>
-        <div class="second"> <img src="teambuild.png" alt="" class="teambuild">
-            <img src="profcomm.png" alt="" class="profcomm">
-            <img src="problemsolve.png" alt="" class="problemsolve">
-            <img src="criticalthink.png" alt="" class="criticalthink">
+    
+        <!-- Second Row -->
+        <div class="row">
+            <div class="softskill">
+                <img src="teambuild.png" alt="Team Management">
+                <p>Team Management</p>
+            </div>
+            <div class="softskill">
+                <img src="profcomm.png" alt="Professional Communication">
+                <p>Professional Communication</p>
+            </div>
+            <div class="softskill">
+                <img src="problemsolve.png" alt="Problem Solving">
+                <p>Problem Solving</p>
+            </div>
+            <div class="softskill">
+                <img src="criticalthink.png" alt="Critical Thinking">
+                <p>Critical Thinking</p>
+            </div>
         </div>
-        <div class="text2"><p>Team Management</p><p>Professional  Communication</p><p class="p2">Problem Solving</p><p class="p3">Critical Thinking</p></div>
     </main>
+    
 </body>
 </html>

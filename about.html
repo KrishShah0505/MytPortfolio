@@ -85,6 +85,86 @@
         .purple{
             color: blueviolet;
         }
+        /* Mobile styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+        margin: 40px 20px;
+    }
+
+    .leftSection, .rightSection {
+        width: 100%;
+    }
+
+    .rightSection img {
+        width: 90%;
+        margin: 20px 0;
+    }
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+    .firstSection {
+        margin: 60px 20px;
+    }
+}
+
+/* Sticky navbar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hover effect on nav links */
+nav ul li a {
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(155, 155, 250);
+    font-size: 1.04rem;
+}
+
+/* Image hover effect */
+.rightSection img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.rightSection img:hover {
+    transform: scale(1.03);
+}
+
+/* Footer alignment */
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    margin: 0;
+}
 </style>
 </head>
 <body>
